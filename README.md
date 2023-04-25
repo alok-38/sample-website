@@ -1,6 +1,6 @@
-<h1>sample-website &#U+1F680;</h1>
+# Sample Website :rocket:
 
-<p>Made with &#U+1F496; using...</p>
+<p>Made using :muscle: and...</p>
 
 <p align="center">
   <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
