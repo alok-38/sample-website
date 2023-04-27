@@ -40,6 +40,16 @@ body {
   overflow-x: hidden;
 }
 
+/* Moby Dick page */
+.sperm-whale {
+  width: 75%;
+}
+
+/* about moby dick */
+.about {
+  margin-bottom: 2em;
+}
+
 /* Kitten image */
 .kitten {
   display: block;
