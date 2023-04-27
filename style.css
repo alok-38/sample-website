@@ -24,10 +24,32 @@ a:hover {
   color: #535bf2;
 }
 
+.link {
+  color: #646cff;
+  transition: color 0.2s ease-in-out;
+}
+
+.link:hover {
+  color: #535bf2;
+}
+
 body {
   margin: 0;
-  min-width: 320px;
+  min-width: 100vw;
   min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Kitten image */
+.kitten {
+  display: block;
+  margin: auto;
+  width: 75%;
+  margin-top: 2em;
+}
+
+.founders {
+  margin: 5px 0 5px 0;
 }
 
 h1 {
@@ -35,18 +57,10 @@ h1 {
   line-height: 1.1;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+h1,
+h2,
+h3 {
   text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
 }
 
 .logo:hover {
@@ -132,4 +146,72 @@ button:focus-visible {
 
 .underline:hover::after {
   width: 100%;
+}
+
+/* PAragraphs */
+p {
+  width: 75%;
+  margin: auto;
+}
+
+/* BlockQuote */
+#my-blockquote {
+  position: relative;
+  left: -100%;
+  transition: left 1s ease-in-out;
+}
+
+/* grid-container */
+.grid-container {
+  display: flex;
+  background-color: #eee;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  text-align: center;
+}
+
+.grid-item img {
+  width: 30%;
+  max-width: 300px;
+  height: auto;
+}
+
+.grid-item p {
+  width: 50%;
+  margin-top: 2em;
+}
+
+.grid-item h3 {
+  font-size: 2em;
+}
+
+/* Twitter link */
+.twitter-following {
+  margin-top: 2em;
+  font-style: italic;
+}
+
+/* Media query for the flex container */
+@media (min-width: 320px) and (max-width: 767px) {
+
+  /* CSS styles for the container */
+  .grid-container {
+    flex-wrap: wrap;
+  }
+
+  .grid-container p,
+  .grid-container img {
+    width: 100%;
+  }
+
+  .grid-container img {
+    margin: 0 0 1em 0;
+  }
+
 }
